@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            My Family Book
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1> My Family Book </h1>
+        <img id="family" src="MY FAMILY.jpg" style="width:30%">
+        <h4 id="family_members_name"> </h4>
+        <button onclick="update()"> Next </button> 
+        </center> 
+        <script>
+            var images=["SDG_2752.JPG","IMG_8830.JPG","SDG_2723.JPG"];
+            var names=["Aarti Kachroo","Sidhartha Shishoo","Raunak Shishoo"];
+            var i=0;
+            function update(){
+                i++;
+            var number_of_family_members=2;
+            if(i>number_of_family_members)
+            {i=0;}
+            var updated_image=images[i];
+            var updated_name=names[i];
+            document.getElementById("family").src=updated_image;
+            document.getElementById("family_members_name").innerHTML=updated_name;
+
+            }
+
+        </script>
+        
+    </body>
+</html>
